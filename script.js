@@ -4,13 +4,18 @@
  * Declare a variable called myFavoriteSong on one line and console.log the value
  * Then, using your Literals, console.log "my favorite song is..." with the song's value
  */
-
+let myFavoriteSong = "Heartful Cry"
+console.log(myFavoriteSong)
+console.log(`my favorite song is ${myFavoriteSong}`)
 /*
  * Prompt 2:
  *
  * Create 3 variables using let and const, then console.log each of them, using a string literal (` ${} `} in the log
  */
-
+const myName = "Cinquea"
+let age = 23
+const birthday = "November 26th"
+console.log(`my name is ${myName} I am ${age} years old. My birthday is ${birthday}`)
 /*
  * Prompt 3:
  *
@@ -21,7 +26,12 @@
  *   - divide your variable by 7
  *   - calculate the remainder of dividing your variable by 2
  */
-
+let thisNum = 5 
+console.log(thisNum + 4)
+console.log(thisNum - 2)
+console.log(thisNum * 3)
+console.log(thisNum / 7)
+console.log(thisNum % 2)
 /*
  * Prompt 4:
  *
@@ -34,12 +44,22 @@
  * Run a console.log that says 'hello my name is..." with your fullName. 
  */
 
-
+const firstName = 'Cinquea'
+const lastName = 'Stafford'
+let fullName = firstName + " " + lastName 
+console.log(`hello my name is ${fullName}`)
 /* Arrays */
 
 // Create an array of Movies, then log the 2nd movie in your array
 // Use your array methods to add a movie in to the Front of the array, then the Back of the Array, then to the 2nd index point of the array
-
+let movies = ['Coraline', 'Paranorman', 'Corpse Bride', 'Kubo']
+console.log(movies[1])
+movies.unshift('Die Hard')
+console.log(movies)
+movies.push('Ratatouille')
+console.log(movies)
+movies.splice(1, 0, 'Spirited Away')
+console.log(movies)
 
 /*
  *
@@ -56,14 +76,16 @@ let array3 = [
   ['Marty Feldman', ['Marty Marion']],
   ['Marty Stuart', ['Marty Janetty', ['Marty McFly'], 'Marty Robbins']]
 ];
-
+console.log(array1[2])
+console.log(array2[1] [1])
+console.log(array3[1][1][1])
 /*
  *
  * Use the length of the array below to retrieve the second to last item.
  */
 
 let array4 = ['a', 'b', 'c', 'd', 'e'];
-
+console.log(array4[array4.length - 2])
 /*
  *
  * Use the following arrays to answer the subprompts below.
@@ -83,3 +105,8 @@ let cathleen = ['Cathleen', 186, 'New York'];
 // Change Cathleen's hometown from New York to "Gotham City".
 
 // Remove "Pittsburgh" from Kristyn's array and add "Oakland".
+thom.splice(0, 1, 'Tom')
+karolin.splice(1, 1, 17)
+cathleen.splice(2, 1, 'Gotham City')
+kristyn.splice(2, 1, 'Oakland')
+console.log(thom, karolin, kristyn, cathleen)
